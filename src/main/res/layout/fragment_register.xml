@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background_login">
+
+    <TextView
+        android:id="@+id/tvCreateAccount"
+        android:text="Create Account,"
+        android:textSize="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textColor="@color/white"
+        android:layout_marginLeft="24dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/tvSignup"
+        android:text="Sign up to get started !"
+        android:tex tSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textColor="@color/white"
+        android:layout_marginLeft="24dp"
+        android:layout_below="@+id/tvCreateAccount"/>
+
+        <EditText
+            android:hint="Full name"
+            android:id="@+id/edtName"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:textSize="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="100dp"
+            android:layout_below="@id/tvSignup"
+            android:backgroundTint="@color/white"/>
+
+        <EditText
+            android:hint="Email ID"
+            android:id="@+id/edtEmail"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:textSize="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/edtName"
+            android:backgroundTint="@color/white"/>
+
+        <EditText
+            android:hint="Password"
+            android:id="@+id/edtPassword"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:textSize="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/edtEmail"
+            android:backgroundTint="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:text="Register"
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPassword"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_login"
+        android:textSize="18dp"
+        android:textColor="@color/white" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tvAlready"/>
+
+    <TextView
+        android:id="@+id/tvAlready"
+        android:layout_marginTop="20dp"
+        android:text="Don't have an account ?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/tvLogin"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:text="Sign in"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
